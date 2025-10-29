@@ -1,0 +1,2 @@
+"use strict";function formatNumber(t){return t.toLocaleString("en-US")}var spans=document.querySelectorAll("span.population"),totalValue=0,count=0;if(spans.forEach(function(t){var e=Number(t.textContent.trim().replace(/[,\s.]+/g,""));!isNaN(e)&&(totalValue+=e,count++)}),count>0){var t=totalValue/count,e=document.querySelector("span.average-population"),o=document.querySelector("span.total-population"),a=Math.round(t);e&&(e.textContent=formatNumber(a)),o&&(o.textContent=formatNumber(totalValue))}
+//# sourceMappingURL=js_get_data_DOM.96442bad.js.map
